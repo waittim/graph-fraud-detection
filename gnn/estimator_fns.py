@@ -24,7 +24,7 @@ def parse_args():
     parser.add_argument('--num-gpus', type=int, default=0)
     parser.add_argument('--optimizer', type=str, default='adam')
     parser.add_argument('--lr', type=float, default=1e-2)
-    parser.add_argument('--n-epochs', type=int, default=200)
+    parser.add_argument('--n-epochs', type=int, default=500)
     parser.add_argument('--n-hidden', type=int, default=16, help='number of hidden units')
     parser.add_argument('--n-layers', type=int, default=3, help='number of hidden layers')
     parser.add_argument('--weight-decay', type=float, default=5e-4, help='Weight for L2 loss')

@@ -1,0 +1,1 @@
+Trained model and related files would be saved into this fold.

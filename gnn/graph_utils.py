@@ -3,9 +3,8 @@ import re
 import dgl
 import numpy as np
 import torch as th
-
+import logging
 #from data import parse_edgelist, get_features, read_edges, read_masked_nodes
-import numpy as np
 import pandas as pd
 
 
@@ -209,8 +208,7 @@ def read_edges(edges, nodes=None):
 
 
 
-#from estimator_fns import get_logger
-import logging
+
 
 def get_logger(name):
     logger = logging.getLogger(name)
