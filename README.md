@@ -1,4 +1,4 @@
-# Fraud Detection in Graph
+# Fraud Detection in Graph Neural Network
 
 Many online businesses lose billions of dollars to fraud each year, but machine learning-based fraud detection models can help businesses predict which interactions or users are likely to be fraudulent in order to reduce losses.
 
