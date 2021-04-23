@@ -18,11 +18,11 @@ Then put all of the CSV files into the `./ieee-data` fold.
 
 ### 2. Data preparation
 
-Before feeding the data to the model, we need to perform data pre-processing. Open **10_data_loader.ipynb** and follow the introduction inside. The compiled data will be saved into the `./data` fold.
+Before feeding the data to the model, we need to perform data pre-processing. Open [**10_data_loader.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/10_data_loader.ipynb) and follow the introduction inside. The compiled data will be saved into the `./data` fold.
 
 ### 3. Training
 
-Open **20_modeling_pytoch.ipynb** and follow the introduction inside. 
+Open [**20_modeling_pytoch.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/20_modeling_pytoch.ipynb) and follow the introduction inside. 
 
 ### 4. After training
 
