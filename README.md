@@ -41,7 +41,7 @@ The trained models and related files will be save into the `./model` fold.
 
 The constructed heterogeneous graph contains a total of 726345 Nodes and 19518802 Edges.
 
-Considering that the data is very imbalanced, we need to make a trade-off between Recall and Precision. Considering that misclassifying non-fraud transactions as fraud will seriously affect the user experience, we choose Precision as the priority. After training, the Precision is 0.83 and the ROC is 0.92.
+Considering that the data is very imbalanced, we need to make a trade-off between Recall and Precision. Considering that misclassifying non-fraud transactions as fraud will seriously affect the user experience, Precision is the priority. After training, the Precision is 0.83 and the ROC is 0.92.
 
 ![ROC](roc_curve.png)
 
