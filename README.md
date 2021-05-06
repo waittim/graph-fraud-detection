@@ -12,6 +12,7 @@ Many online businesses lose billions of dollars to fraud each year, but machine 
 This repo formulates the problem of fraud detection as a classification task for heterogeneous interaction networks. The machine learning model used is a graphical neural network (GNN) that learns potential representations of users or transactions, which can then be easily classified as Fraud or not.
 
 This repo constructs a heterogeneous graph of the transaction data provided in the [IEEE-CIS Fraud Detection](https://www.kaggle.com/c/ieee-fraud-detection/data) data. The following are defined as features of nodes and edges, respectively:
+
 - **NODE:** Number of card associated, Number of address associated, Days between transactions, Match situation(name, card, address, email, etc.), Vesta engineered rich features, etc.
 - **EDGE:** Purchaser and recipient email domain, Product, Card information, Address, Device information, Network connection information (IP, ISP, Proxy, etc), Digital signature (UA/browser/os/version, etc)
 
@@ -23,11 +24,11 @@ This repo constructs a heterogeneous graph of the transaction data provided in t
 
 First, we need to download the dataset from [Kaggle](https://www.kaggle.com/c/ieee-fraud-detection/data). This [link](https://www.kaggle.com/c/ieee-fraud-detection/discussion/101203) provided some additional information about the dataset.
 
-Then put all of the CSV files into the `./ieee-data` fold.
+Then put all of the CSV files into the `./ieee-data` folder.
 
 ### 2. Data preparation
 
-Before feeding the data to the model, we need to perform data pre-processing. Open [**10_data_loader.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/10_data_loader.ipynb) and follow the introduction inside. The compiled data will be saved into the `./data` fold.
+Before feeding the data to the model, we need to perform data pre-processing. Open [**10_data_loader.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/10_data_loader.ipynb) and follow the introduction inside. The compiled data will be saved into the `./data` folder.
 
 ### 3. Training
 
@@ -35,7 +36,7 @@ Open [**20_modeling_pytoch.ipynb**](https://github.com/waittim/graph-fraud-detec
 
 ### 4. After training
 
-The trained models and related files will be save into the `./model` fold. 
+The trained models and related files will be save into the `./model` folder. 
 
 ## Results
 
