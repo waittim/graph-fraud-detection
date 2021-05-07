@@ -52,6 +52,7 @@ def train_fg(model, optim, loss, features, labels, train_g, test_g, test_mask,
         metric = evaluate(model, train_g, features, labels, device)
         print("Epoch {:05d}, Time(s) {:.4f}, Loss {:.4f}, F1 {:.4f} ".format(
                 epoch, np.mean(duration), loss_val, metric))
+        
         epoch_result = "{:05d},{:.4f},{:.4f},{:.4f}\n".format(epoch, np.mean(duration), loss_val, metric)
         with open('results.txt','w') as f:    
             f.write(epoch_result)                 

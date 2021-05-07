@@ -24,11 +24,11 @@ This repo constructs a heterogeneous graph of the transaction data provided in t
 
 First, we need to download the dataset from [Kaggle](https://www.kaggle.com/c/ieee-fraud-detection/data). This [link](https://www.kaggle.com/c/ieee-fraud-detection/discussion/101203) provided some additional information about the dataset.
 
-Then put all of the CSV files into the `./ieee-data` folder.
+Then put all of the CSV files into the `./ieee-data/` folder.
 
 ### 2. Data preparation
 
-Before feeding the data to the model, we need to perform data pre-processing. Open [**10_data_loader.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/10_data_loader.ipynb) and follow the introduction inside. The compiled data will be saved into the `./data` folder.
+Before feeding the data to the model, we need to perform data pre-processing. Open [**10_data_loader.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/10_data_loader.ipynb) and follow the introduction inside. The compiled data will be saved into the `./data/` folder.
 
 ### 3. Training
 
@@ -36,7 +36,7 @@ Open [**20_modeling_pytoch.ipynb**](https://github.com/waittim/graph-fraud-detec
 
 ### 4. After training
 
-The trained models and related files will be save into the `./model` folder. 
+The trained models and related files will be save into the `./model/` folder. You can also visualize the training process by [**30_visual.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/30_visual.ipynb).
 
 ## Results
 
