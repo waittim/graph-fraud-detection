@@ -50,8 +50,11 @@ def train_fg(model, optim, loss, features, labels, train_g, test_g, test_mask,
 
         duration.append(time.time() - tic)
         metric = evaluate(model, train_g, features, labels, device)
-        print("Epoch {:05d} | Time(s) {:.4f} | Loss {:.4f} | f1 {:.4f} ".format(
+        print("Epoch {:05d}, Time(s) {:.4f}, Loss {:.4f}, F1 {:.4f} ".format(
                 epoch, np.mean(duration), loss_val, metric))
+        epoch_result = "{:05d},{:.4f},{:.4f},{:.4f}\n".format(epoch, np.mean(duration), loss_val, metric)
+        with open('results.txt','w') as f:    
+            f.write(epoch_result)                 
 
     class_preds, pred_proba = get_model_class_predictions(model,
                                                           test_g,
