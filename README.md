@@ -36,7 +36,7 @@ Open [**20_modeling_pytoch.ipynb**](https://github.com/waittim/graph-fraud-detec
 
 ### 4. After training
 
-The trained models and related files will be save into the `./model/` folder. You can also visualize the training process by [**30_visual.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/30_visual.ipynb).
+The trained models and related files will be save into the `./model/` folder. You can also visualize the training process by [**30_visual.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/30_visual.ipynb). The related graphs and training record has been saved in `./output/` folder.
 
 ## Results
 
@@ -44,7 +44,7 @@ The constructed heterogeneous graph contains a total of 726345 Nodes and 1951880
 
 Considering that the data is very imbalanced, we need to make a trade-off between Recall and Precision. Considering that misclassifying non-fraud transactions as fraud will seriously affect the user experience, Precision is the priority. After training, the Precision is 0.83 and the ROC is 0.92.
 
-![ROC](roc_curve.png)
+![ROC](./output/roc_curve.png)
 
 Confusion Matrix:
 type | **Labels Positive** | **Labels Negative**

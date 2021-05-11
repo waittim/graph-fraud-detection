@@ -54,7 +54,7 @@ def train_fg(model, optim, loss, features, labels, train_g, test_g, test_mask,
                 epoch, np.mean(duration), loss_val, metric))
         
         epoch_result = "{:05d},{:.4f},{:.4f},{:.4f}\n".format(epoch, np.mean(duration), loss_val, metric)
-        with open('results.txt','w') as f:    
+        with open('./output/results.txt','a+') as f:    
             f.write(epoch_result)                 
 
     class_preds, pred_proba = get_model_class_predictions(model,
@@ -65,7 +65,7 @@ def train_fg(model, optim, loss, features, labels, train_g, test_g, test_mask,
                                                           threshold=thresh)
 
     if compute_metrics:
-        acc, f1, p, r, roc, pr, ap, cm = get_metrics(class_preds, pred_proba, labels.numpy(), test_mask.numpy(), './')
+        acc, f1, p, r, roc, pr, ap, cm = get_metrics(class_preds, pred_proba, labels.numpy(), test_mask.numpy(), './output/')
         print("Metrics")
         print("""Confusion Matrix:
                                 {}
