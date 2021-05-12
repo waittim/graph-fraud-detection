@@ -1,1 +1,1 @@
-Trained model and related files would be saved into this fold.
+Trained model and related files would be saved into this folder.

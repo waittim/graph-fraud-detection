@@ -15,11 +15,11 @@ import pickle
 import copy
 
 from sklearn.metrics import confusion_matrix
-from estimator_fns import parse_args, get_logger
-from graph_utils import get_edgelists, construct_graph
-from data import get_features, get_labels, read_masked_nodes, parse_edgelist, read_edges
-from utils import get_metrics
-from pytorch_model import HeteroRGCN
+from gnn.estimator_fns import *
+from gnn.graph_utils import *
+from gnn.data import *
+from gnn.utils import *
+from gnn.pytorch_model import *
 
 def initial_record():
     if os.path.exists('./output/results.txt'):

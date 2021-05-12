@@ -20,6 +20,8 @@ This repo constructs a heterogeneous graph of the transaction data provided in t
 
 ## Usage
 
+If you want to run the code locally rather than on Colab, please skip the first 2 cell in each notebook.
+
 ### 1. Download dataset
 
 First, we need to download the dataset from [Kaggle](https://www.kaggle.com/c/ieee-fraud-detection/data). This [link](https://www.kaggle.com/c/ieee-fraud-detection/discussion/101203) provided some additional information about the dataset.
@@ -32,7 +34,7 @@ Before feeding the data to the model, we need to perform data pre-processing. Op
 
 ### 3. Training
 
-Open [**20_modeling_pytoch.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/20_modeling_pytoch.ipynb) and follow the introduction inside. CPU training is recommended. Using GPUs may require additional environmental issues to be addressed.
+Open [**20_modeling_pytoch.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/20_modeling_pytoch.ipynb) and follow the introduction inside. CPU training is recommended. Using GPUs may require additional environmental issues to be addressed. 
 
 ### 4. After training
 
