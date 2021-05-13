@@ -51,6 +51,6 @@ Considering that the data is very imbalanced, we need to make a trade-off betwee
 Confusion Matrix:
 type | **Labels Positive** | **Labels Negative**
 ---|---|---
-**Predicted Positive** | 1308 | 272
-**Predicted Negative** | 2756 | 113772
+**Predicted Positive** | 1435 | 240
+**Predicted Negative** | 2629 | 113804
 
