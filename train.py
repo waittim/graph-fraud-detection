@@ -192,7 +192,7 @@ def get_model(ntype_dict, etypes, hyperparams, in_feats, n_classes, device):
 
 
 if __name__ == '__main__':
-    logging = get_logger(__name__)
+    # logging = get_logger(__name__)
 
     print('numpy version:{} PyTorch version:{} DGL version:{}'.format(np.__version__,
                                                                       th.__version__,
