@@ -34,7 +34,7 @@ Before feeding the data to the model, we need to perform data pre-processing. Op
 
 ### 3. Training
 
-Open [**20_modeling_pytoch.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/20_modeling_pytoch.ipynb) and follow the introduction inside. CPU training is recommended. Using GPUs may require additional environmental issues to be addressed. 
+Open [**20_modeling.ipynb**](https://github.com/waittim/graph-fraud-detection/blob/main/20_modeling.ipynb) and follow the introduction inside. CPU training is recommended. Using GPUs may require additional environmental issues to be addressed. 
 
 ### 4. After training
 
