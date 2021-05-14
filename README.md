@@ -42,15 +42,16 @@ The trained models and related files will be save into the `./model/` folder. Yo
 
 ## Results
 
-The constructed heterogeneous graph contains a total of 726345 Nodes and 19518802 Edges.
+The constructed heterogeneous graph contains a total of 726,345 Nodes and 19,518,802 Edges.
 
-Considering that the data is very imbalanced, we need to make a trade-off between Recall and Precision. Considering that misclassifying non-fraud transactions as fraud will seriously affect the user experience, Precision is the priority. After training, the Precision is 0.83 and the ROC is 0.92.
-
-![ROC](./output/roc_curve.png)
+Considering that the data is very imbalanced, we need to make a trade-off between Recall and Precision. Considering that misclassifying non-fraud transactions as fraud will seriously affect the user experience, Precision is the priority. After training, the Precision is 0.86 and the ROC is 0.92.
 
 Confusion Matrix:
 type | **Labels Positive** | **Labels Negative**
 ---|---|---
-**Predicted Positive** | 1308 | 272
-**Predicted Negative** | 2756 | 113772
+**Predicted Positive** | 1435 | 240
+**Predicted Negative** | 2629 | 113804
+
+![ROC](./output/roc_curve.png)
+
 
