@@ -265,6 +265,18 @@ def construct_graph(training_dir, edges, nodes, target_node_type):
     # add self relation
     edgelists[('target', 'self_relation', 'target')] = [(t, t) for t in id_to_node[target_node_type].values()]
 
+    # Cast edge endpoints to int64 tensors so DGL/PyTorch can infer dtype
+    # across NumPy versions (avoids RuntimeError: Could not infer dtype of numpy.int64).
+    for etype, edges in list(edgelists.items()):
+        if len(edges) == 0:
+            edgelists[etype] = (th.tensor([], dtype=th.int64), th.tensor([], dtype=th.int64))
+        else:
+            src, dst = zip(*edges)
+            edgelists[etype] = (
+                th.tensor(src, dtype=th.int64),
+                th.tensor(dst, dtype=th.int64),
+            )
+
     g = dgl.heterograph(edgelists)
     print(
         "Constructed heterograph with the following metagraph structure: Node types {}, Edge types{}".format(
